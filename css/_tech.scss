@@ -1,0 +1,356 @@
+//MOBILE
+.body-techs{
+    background:url("../img/technology/background-technology-mobile.jpg"), black;
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
+
+.tech{
+    color:white;
+    text-align: center;
+    &__header{
+
+        .tech-container{
+            max-width: 100%;
+
+            //MOBILE ONLY IMG
+            @include breakpoint-down(medium){
+                
+                .techig1{
+                    background:url('../img/technology/image-launch-vehicle-landscape.jpg');
+                    background-size:cover;
+
+                    }
+
+                    
+                .techig2{
+                    background:url('../img/technology/image-space-capsule-landscape.jpg');
+                    background-size:cover;
+
+                }
+
+                
+                .techig3{
+                    background:url('../img/technology/image-spaceport-landscape.jpg');
+                    background-size:cover;
+                    }
+
+            }
+             //END MOBILE ONLY IMG
+
+
+            div{ 
+                margin:auto;
+                max-width:100%;
+                display:none;
+                height:170px;
+
+
+                &.activate{
+                    display:block;
+
+                }
+
+
+            }
+
+        }
+
+
+    }
+
+     //BUTTONS
+
+    &__buttons{
+
+        button{
+            cursor: pointer;
+            margin-top:1.7rem;
+            border:1px solid rgb(160, 160, 160);
+            background:none;
+            width: 43px;
+            height:43px;
+            border-radius: 50%;
+            font-family: 'Bellefair', serif;
+            font-size:$navtext;
+            color:$nearwhite;
+            
+            &.active{
+                opacity: 1;
+                color:black;
+                background:white;
+            }
+
+            &:hover{
+                opacity:0.5;
+
+            }
+
+            &:not(:last-child){
+                margin-right:0.8rem;
+            }
+
+        }
+
+    }
+     //END
+
+    //TEXT CONTENT
+
+    &__text-container{
+        display:none;
+        margin-top:1.5625rem;
+        text-align: center;
+
+        &.active{
+            display:block;
+        }
+        
+        > *:not(:last-child){
+            font-family: 'Bellefair', serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        h4{
+            opacity:0.5;
+            margin:0;
+            font-weight:400;
+            font-size: $subheading2;      
+        }
+
+        h1{
+            margin:0;
+            margin-top:0.5rem;
+            font-weight:400;
+            font-size: $subheading1;
+            color:$nearwhite;
+        }
+
+        p{
+            margin:auto;
+            margin-top:1rem;
+            max-width:85%;
+            letter-spacing: 0.76px;
+            line-height: 1.6;
+            color:$lightpurple;
+
+        }
+
+    }
+
+}
+//END MOBILE
+
+
+
+//TABLET
+@include breakpoint-up(medium){
+    .body-techs{
+        background:url("../img/technology/background-technology-tablet.jpg"), black;
+        background-repeat: no-repeat;
+        background-size:cover; 
+    }
+    
+    .tech{
+        color:white;
+        text-align: center;
+        &__header{
+    
+            .tech-container{
+                margin-top:4rem;
+                max-width:100%;
+
+                
+            div{ 
+                max-width:auto;
+                height:310px;
+                
+            }
+    
+            }
+    
+    
+        }
+    
+         //BUTTONS
+    
+        &__buttons{
+            margin-top:1.5rem;
+    
+            button{
+                width: 50px;
+                height:50px;
+               
+                &.active{
+                    opacity: 1;
+                    color:black;
+                    background:white;
+                }
+    
+                &:hover{
+                    opacity:0.5;
+    
+                }
+    
+                &:not(:last-child){
+                    margin-right:0.8rem;
+                }
+    
+            }
+    
+        }
+         //END
+    
+        //TEXT CONTENT
+    
+        &__text-container{
+            margin:auto;
+            margin-top:2rem;
+            max-width:460px;
+            
+    
+            h1{
+                
+                font-size: $heading4;
+             
+            }
+    
+       
+    
+        }
+    
+    }   
+
+}
+//END TABLET
+
+
+//DESKTOP
+@include breakpoint-up(large){
+    .body-techs{
+        background:url("../img/technology/background-technology-desktop.jpg"), black;
+        background-repeat: no-repeat;
+        background-size:cover; 
+    }
+    
+    .tech{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        &__header{
+            order:2;    
+            .tech-container{
+                margin-top:7.1875rem;
+                width:515px;
+                height:527px;
+
+                 //DESKTOP ONLY IMG
+                .techig1{
+                    background:url('../img/technology/image-launch-vehicle-portrait.jpg');
+                    background-size:cover;
+
+                    }
+                .techig2{
+                    background:url('../img/technology/image-space-capsule-portrait.jpg');
+                    background-size:cover;
+
+                }
+                .techig3{
+                    background:url('../img/technology/image-spaceport-portrait.jpg');
+                    background-size:cover;
+                    }
+                 // END DESKTOP ONLY IMG
+
+                div{ 
+                    max-width:auto;
+                    height:527px; 
+                    
+                }
+
+    
+            }
+    
+    
+        }
+    
+         //BUTTONS
+    
+        &__buttons{
+            margin-top:0;
+    
+            button{
+                display:block;
+                width: 80px;
+                height:80px;
+                font-size:$subheading1;
+
+                &:first-child{
+                    margin-top:0;
+                }
+               
+                &.active{
+                    opacity: 1;
+                    color:black;
+                    background:white;
+                }
+    
+                &:hover{
+                    opacity:0.5;
+    
+                }
+    
+                &:not(:last-child){
+                    margin-right:0.8rem;
+                }
+    
+            }
+    
+        }
+         //END
+
+       
+    
+        //TEXT CONTENT
+
+        &-info{
+            margin-left:5rem;
+        }
+
+        header{
+            margin-top:4.875rem;
+            margin-bottom:6rem;
+        }
+
+        .special-container{
+            display:flex;
+
+        }
+        
+        &__text-container{
+            order:1;
+            margin:auto;
+            margin-top:2rem;
+            margin-left:4.5rem;
+            max-width:500px;
+            text-align: left;
+            
+    
+            h1{
+                font-size: $heading3;
+             
+            }
+
+            p{
+                margin-left:0;
+                line-height: 1.7;
+            }
+    
+       
+    
+        }
+
+    
+    }   
+
+}

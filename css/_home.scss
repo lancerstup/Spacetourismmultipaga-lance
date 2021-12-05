@@ -1,0 +1,227 @@
+.body-home{
+    background:url("../img/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+.home{
+    margin:auto;
+    max-width:325px;
+    &__container{
+        margin-top:1.5rem;
+        text-align: center;
+             
+        header{
+            margin-bottom:0.625rem;
+            text-transform: uppercase;
+            color:$lightpurple;    
+            font-size:$subheading2;
+            letter-spacing: 2.35px;
+    
+        }
+
+        h1{
+            margin:0;
+            font-family: 'Bellefair', serif;
+            text-transform: uppercase;
+            font-weight:400;
+            color:$nearwhite;
+            font-size:$heading2;
+           
+        }
+
+        p{
+            color:$lightpurple;
+            font-size:$navtext;
+            font-weight:400;
+            line-height: 1.6;
+
+        }
+    }
+
+    //BUTTON
+
+    &__explore-btn{
+        position: relative;
+        margin:auto;
+        margin-top:3rem;
+        max-width:200px;
+        height:200px;
+        text-align: center;
+    
+          &:hover{            
+            background: rgba(180, 180, 180, 0.3);
+            border-radius: 50%;  
+                       
+        }
+
+        button{
+        position:absolute;  
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        padding:0;
+        border:none;
+        width:150px;
+        height:150px;
+        background:$nearwhite;
+        border-radius: 50%;
+        text-transform: uppercase;  
+        font-family: 'Bellefair', serif;
+        font-size:1.25rem;
+       
+        }
+
+        
+    }
+}
+//END
+
+
+
+//TABLET
+@include breakpoint-up(medium){
+
+    .body-home{
+        background:url("../img/home/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    
+    }
+
+    .home{
+        margin-top:5.625rem;
+        max-width: 450px;
+
+        &__container{
+            margin:0;         
+            header{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size:$navtext;   
+              
+            }
+    
+            h1{
+                font-size:$heading1;
+
+            }
+
+        }
+
+        //BUTTON
+    
+        &__explore-btn{
+            position: relative;
+            margin-top:9.6875rem;
+            max-width:320px;
+            height:320px; 
+            
+        &:hover{            
+                background: rgba(180, 180, 180, 0.3);
+                border-radius: 50%;                
+            }
+
+           
+            button{
+                cursor: pointer;
+                position:absolute;  
+                left:50%;
+                top:50%;
+                transform: translate(-50%,-50%);
+                width:242px;
+                height:242px;
+                font-size:$heading4;
+           
+            }
+
+            a{
+                color:black;
+            }
+
+    
+            
+        }
+    }
+    
+   
+}
+//END
+
+
+
+//DESKTOP
+@include breakpoint-up(large){
+    .body-home{
+        background:url("../img/home/background-home-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    
+    }
+
+    .home{
+        margin:0;
+        margin-top:10rem;
+        max-width: 100%;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+   
+
+        &__container{
+            margin:0;
+            max-width:450px;   
+             
+            header{
+                margin:0;
+                justify-content: flex-start;
+                font-size:$heading5;
+              
+            }
+    
+            h1{
+                font-size:$heading1;
+
+            }
+
+            p{   
+                text-align: left;
+                font-size:1.2rem;
+                
+                
+    
+            }
+
+        }
+
+        //BUTTON
+    
+        &__explore-btn{
+            margin:0;
+            width:325px;
+            height:325px; 
+            
+        &:hover{            
+                background: rgba(180, 180, 180, 0.3);
+                border-radius: 50%;                
+            }
+
+           
+            button{
+                width:274px;
+                height:274px;
+                font-size:$heading4;
+           
+            }
+
+    
+            
+        }
+    }
+
+}
+
+
+

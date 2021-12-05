@@ -1,0 +1,338 @@
+.body-destination{
+    background:url("../img/destination/background-destination-mobile.jpg"), black;
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
+
+.destination{
+    
+    margin:auto;
+    text-align: center;
+
+    //TEXT HEADER
+    &__header{ 
+        margin-bottom:1.25rem;
+        
+        .planet-container{
+            margin:auto;
+            max-width: 170px;
+            height:170px;
+            img{
+             display:none;
+             max-width: inherit;
+             height:170px;   
+
+             &.activate{
+                display:block;
+             }
+            }
+        }
+
+    }
+
+    //END
+
+
+    //TEXT BUTTON
+
+    &__planet-btn{
+        button{
+            border:none;
+            background:none;
+            letter-spacing: 2px;
+            color:$lightpurple;
+            text-transform: uppercase;
+            font-family: 'Bellefair', serif;
+            font-size:0.76rem;
+            position:relative;
+
+            &:hover::after{
+                background:rgb(90, 90, 90);        
+            }
+
+            &.active::after{
+                color:$nearwhite;
+                background:white;
+            }
+          
+            &::after{
+                content: " ";
+                display:block;
+                height:2px;
+                width:50%;
+                position:absolute;
+                left:25%;
+                right:10%;
+                bottom: -10px;
+
+               
+            }
+
+             
+
+
+
+        }
+
+    }
+
+    //END
+
+
+    //TEXT CONTENT
+    &__text-container{
+        max-width: 325px;
+        margin:auto;
+        display:none;
+        
+
+        &.active{
+            display:block;
+        }
+        h1{
+            font-family: 'Bellefair', serif;
+            margin:0; 
+            margin-top:1.25rem;
+            text-transform: uppercase;
+            color:$nearwhite;
+            font-size:$heading3;
+            font-weight: 400;
+
+        }
+
+        p{
+            letter-spacing: 0.76px;
+            margin-top:0;
+            color:$lightpurple;   
+            line-height: 1.6;
+
+        }
+
+        .planet-line{
+            margin:2rem 0;
+            height:1px;
+            background:$lightpurple;
+            opacity:0.15;
+        }
+
+        .stat-container{
+            text-transform: uppercase;
+            
+         
+
+            .distance{
+                margin-bottom:1.5rem;
+                
+                p{
+                    margin:0;
+                    margin-bottom:0.4rem;
+                    color:$lightpurple;
+                    font-size:$subheading2;
+                    letter-spacing: 2.35px;
+                }
+
+                h2{
+                    color:$nearwhite;
+                    margin:0;
+                    font-size:$subheading1;
+                    font-weight:400;    
+                    font-family: 'Bellefair', serif;  
+
+                }
+
+            }
+
+            .travel-time{
+                p{
+                    margin:0;
+                    margin-bottom:0.4rem;
+                    color:$lightpurple;
+                    font-size:$subheading2;
+                    letter-spacing: 2.35px;
+                }
+
+                h2{
+                    color:$nearwhite;
+                    margin:0;
+                    font-size:$subheading1;
+                    font-weight:400;
+                    font-family: 'Bellefair', serif;
+
+                }
+
+            }
+        }
+
+    }
+
+
+}
+
+ //END
+
+//TABLET
+ @include breakpoint-up(medium){
+
+    .body-destination{
+        background:url("../img/destination/background-destination-tablet.jpg"), black;
+        background-repeat: no-repeat;
+        background-size:cover; 
+    }
+    
+
+    .destination{
+    
+    
+        //TEXT HEADER
+        &__header{ 
+          
+            
+            .planet-container{
+                margin-top:3rem;
+                max-width: 300px;
+                height:300px;
+              
+                img{
+                    max-width:inherit;
+                    height:300px;      
+             
+                }
+            }
+    
+        }
+    
+        //END
+    
+    
+        //TEXT BUTTON
+    
+        &__planet-btn{
+            margin-top:3rem;
+    
+        }
+    
+        //END
+    
+    
+        //TEXT CONTENT
+        &__text-container{
+            max-width:580px;
+           
+            h1{
+                font-size:4rem;
+                margin-top:1.5rem;
+    
+            }
+    
+            p{
+                margin:0 2rem;
+              
+    
+            }
+    
+           
+    
+            .stat-container{
+                margin:auto;
+                
+
+                >*{
+                    display:inline-block;
+        
+                }
+             
+    
+                .distance{
+                    margin:0;
+                    margin-right:4rem;
+               
+    
+                }
+    
+             
+            }
+    
+        }
+    
+    
+    }
+
+
+ }
+ //END
+
+
+ //DESKTOP
+ @include breakpoint-up(large){
+    .body-destination{
+        background:url("../img/destination/background-destination-desktop.jpg"), black;
+        background-repeat: no-repeat;
+        background-size:cover; 
+    }
+    
+
+    .destination{
+        margin-top:4.6875rem;
+        display:flex;
+        justify-content: space-around;
+        text-align: left;
+    
+    
+        //TEXT HEADER
+        &__header{ 
+          header{
+            margin:0;
+          }
+          
+            
+            .planet-container{
+                margin-top:3rem;
+                max-width: 445px;
+                height:445px;
+              
+                img{
+                    max-width:inherit;
+                    height:445px;      
+             
+                }
+            }
+    
+        }
+    
+        //END
+    
+    
+        //TEXT BUTTON
+    
+        &__planet-btn{
+            margin-top:4.375rem;
+    
+        }
+    
+        //END
+    
+    
+        //TEXT CONTENT
+        &__text-container{
+           
+            max-width:445px;
+           
+            h1{
+                font-size:$heading2;
+    
+            }
+    
+            p{
+                margin:0
+              
+    
+            }
+    
+           
+    
+        }
+    
+    
+    }
+
+ }

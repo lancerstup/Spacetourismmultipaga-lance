@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Space Tourism | Destination</title>
+</head>
+<body class="body-destination">
+
+    <nav class="nav flex flex-j-sb flex-a-c">
+        <!-- LOGO -->
+        <div class="nav__logo">
+            <a href="./index.html"><img src="./img/shared/logo.svg" alt="logo"></a>
+        </div>
+         <!-- END -->
+
+         <!-- underline -->
+        <div class="underline-container hide-underline">
+            <div class="nav__underline">
+          </div>
+        </div>
+        <!-- END -->
+
+         <!-- HAMBURGER BUTTON / LINKS-->
+            <div class="ham-btn hide-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+           
+            <div class="ham-btn__links has-fade">
+                
+                <ul class="links">
+                    <li><a href="./index.html" class=""><b>00</b> Home</a></li>
+                    <li><a href="./destination.html" class=""><b>01</b> Destination</a></li>
+                    <li><a href="./crew.html" class=""><b>02</b> Crew</a></li>
+                    <li><a href="./technology.html" class=""><b>03</b> Technology</a></li>
+                </ul>
+               
+            </div>
+            <!-- END--> 
+    </nav>
+
+    <main class="destination">
+
+        <!-- PLANET HEADER -->
+        <article class="destination__header">
+            <header class=""> 
+               <h4>01</h4> 
+               <p>Pick your destination</p> 
+             </header>
+            <div class="planet-container">
+                <img src="./img/destination/image-moon.png" class="ph activate fade-go" alt="moon" id='moons'>
+                <img src="./img/destination/image-mars.png" class="ph  fade-go" alt="mars" id='marses'>
+                <img src="./img/destination/image-europa.png" class="ph fade-go" alt="europa" id='europas'>
+                <img src="./img/destination/image-titan.png" class="ph fade-go"  alt="titan" id='titans'>            
+            </div>
+       </article>
+       <!-- END -->
+
+       <div class="info-container">
+
+         <!-- PLANET BUTTON -->
+        <div class="destination__planet-btn">
+            <button class='dest-button active' data-id='moon' data-or='moons'> Moon</button>
+            <button class='dest-button' data-id='mars' data-or='marses'> Mars</button>
+            <button class='dest-button' data-id='europa'  data-or='europas'> Europa</button>
+            <button class='dest-button' data-id='titan' data-or='titans'> Titan</button>
+        </div>
+        <!-- END -->
+
+        <!-- TEXT ITEM -->
+        <article class="destination__text-container active fade-go" id='moon'>
+            <h1>Moon</h1>
+            <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+                regain perspective and come back refreshed. While you’re there, take in some history 
+                by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+            <div class="planet-line"></div>
+
+            <div class="stat-container">
+                <div class="distance">
+                    <p>Avg. distance</p>
+                    <h2>384,400 km</h2>
+                </div>
+                <div class="travel-time">
+                    <p>Est. travel time</p>
+                    <h2>3 days</h2>
+                </div>
+            </div>
+       </article>
+       <!-- END -->
+
+       <!-- TEXT ITEM -->
+       <article class="destination__text-container fade-go" id='europa'>
+        <h1>Europa</h1>
+        <p>  The smallest of the four Galilean moons orbiting Jupiter,
+             Europa is a winter lover’s dream. With an icy surface, 
+             it’s perfect for a bit of ice skating, curling, hockey, 
+            or simple relaxation in your snug  wintery cabin.</p>
+
+        <div class="planet-line"></div>
+
+        <div class="stat-container">
+            <div class="distance">
+                <p>Avg. distance</p>
+                <h2> 628 mil. km</h2>
+            </div>
+            <div class="travel-time">
+                <p>Est. travel time</p>
+                <h2>3 years</h2>
+            </div>
+        </div>
+   </article>
+   <!-- END -->
+
+   <!-- TEXT ITEM -->
+   <article class="destination__text-container  fade-go" id='mars'>
+    <h1>Mars</h1>
+    <p> Don’t forget to pack your hiking boots. 
+        You’ll need them to tackle Olympus Mons, 
+        the tallest planetary mountain in our solar system. 
+        It’s two and a half times the size of Everest!</p>
+
+    <div class="planet-line"></div>
+
+    <div class="stat-container">
+        <div class="distance">
+            <p>Avg. distance</p>
+            <h2> 225 mil. km</h2>
+        </div>
+        <div class="travel-time">
+            <p>Est. travel time</p>
+            <h2> 9 months</h2>
+        </div>
+    </div>
+</article>
+<!-- END -->
+
+<!-- TEXT ITEM -->
+<article class="destination__text-container  fade-go" id='titan'>
+    <h1>Titan</h1>
+    <p>      
+        The only moon known to have a dense atmosphere other than Earth, 
+        Titan is a home away from home (just a few hundred degrees colder!). 
+        As a  bonus, you get striking views of the Rings of Saturn.</p>
+
+    <div class="planet-line"></div>
+
+    <div class="stat-container">
+        <div class="distance">
+            <p>Avg. distance</p>
+            <h2> 1.6 bil. km</h2>
+        </div>
+        <div class="travel-time">
+            <p>Est. travel time</p>
+            <h2> years </h2>
+        </div>
+    </div>
+</article>
+<!-- END -->
+
+</div>
+ 
+    </main>
+
+
+   
+
+    
+  
+   
+    
+  
+    
+    
+  
+    
+
+ 
+
+<script src='./javascript/app.js'></script>
+
+</body>
+</html>
